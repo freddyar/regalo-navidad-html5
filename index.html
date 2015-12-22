@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css"></link>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+            
+
+            var x;
+            x=$(document);
+            x.ready(inicializar);
+
+
+
+            function inicializar(){
+                var c=$("#contenido");
+                c.hide();
+                var x=$("#rt");
+                x.click(muestrame);
+                
+            }
+            function muestrame(){
+                var x=$("#contenido");
+                x.slideToggle("slow");
+            }
+            
+            
+        </script>
+        <style type="text/css">
+            
+        </style>
+</head>
+<body class="darkBg" onload="nieve()">
+    <header></header>
+    <section>
+        <div>
+            <h1>FELIZ NAVIDAD AMIGOS INTERNAUTAS... !!!</h1>
+        </div>
+        <div id="regalo">
+            <img id="rt" src="img/regalo_tapa.png" >
+            <div id="contenido">
+                <p>
+                    Felices fiestas navideñas.<br><br>Pide un deseo, cerrando bien tus ojos, piensa en la navidad y espera tu milagro... ;-)
+                </p>
+            </div>
+            <img id="ra" src="img/regalo_abajo.png" >
+        </div>
+        <h3>
+            Y UN PROSPERO AÑO NUEVO...
+        </h3>
+    </section>
+    <footer>
+        <p>Si no sabes qué regalar a tus seres más queridos en Navidad, regálales tu amor.<br></p>
+    </footer>
+    <script src='js/snowfall.min.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
